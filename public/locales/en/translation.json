@@ -1,0 +1,66 @@
+{
+  "menu": {
+    "link1": "Who am I?",
+    "link2": "My skills?",
+    "link3": "Achievements",
+    "link4": "Contact me",
+    "link5": "Download My CV",
+    "link6": "language"
+  },
+  "banner": {
+    "link1": "Hello , I am",
+    "link2": "Frontend & Mobile",
+    "link3": " Developer"
+  },
+  "skills": {
+    "Sectitle1": "Core competencies",
+    "Sectitle2": "Development tools &",
+    "Sectitle3": "environment",
+    "Sectitle4": "Other Skills",
+    "Sectitle5": "Creative",
+    "Sectitle6": "Tools",
+    "projetTitleOne": "Project in progress",
+    "projetTitleTwo": "Development of an application similar to TikTok",
+    "projetDescOne": "A team of young, passionate developers, including myself, got together to create a social network similar to and even better than tiktok.",
+    "projetDescTwo": "Join the discord server if you're up for this adventure",
+    "projetDescThree": "I update my online platform every 3 months and create content on youtube about it and all that revolves around IT development."
+  },
+  "descriptiont": {
+    "title1": "I develop and test front-end applications using these different technologies.",
+    "title2": "I develop and test full-stack mobile applications using these different technologies.",
+    "title3": "I use its tools and environment to improve my productivity, work remotely and monitor my progress.",
+    "title4": "I use these tools to improve my creativity and stay up to date in the world of web, photo and video design.",
+    "title5": "is used for marketing purposes with its Facebook ads tool.",
+    "title6": "he helps me with the web, video scripting, optimisation etc. and finally",
+    "title7": "which retrieves data from a website according to its configuration",
+    "title8": "Improves the stability, user experience and performance of applications.",
+    "title9": "All my projects",
+    "title10": "Click to view"
+  },
+  "Projects": {
+    "propTitle": "After the nextjs training course, I wanted to solidify the basics with a little practical work....",
+    "prop": "After the nextjs training course, I wanted to solidify the basics with a little practical work that involved using next js client components and server components to build a small application.",
+    "alibiadescriptonv1": "This is a personal project that has had two versions, of which this is the first, which is a website representing my online start-up of niche IT products and services."
+  },
+  "Marketing": {},
+  "FullStack": {
+    "Sectitle8": "Technology watch marketing & design trends (web | mobile)",
+    "Sectitle9": "HOBIES & PASTIMES"
+  },
+  "modal": {
+    "Moretitle1": "Hello sir, madam, I would be delighted to work with you.",
+    "Moreitle2": "Back",
+    "Moretitle3": "Motivation Letter",
+    "Moretitle4": "Canadian Type CV",
+    "Moretitle5": "CV French Type"
+  },
+  "Footer": {
+    "Moretitle1": "SOCIAL NETWORKS",
+    "Moreitle2": "Find me",
+    "Moretitle3": "Contact me",
+    "Moretitle4": "If you are a company or an individual and you would like to entrust me with your project, just fill in this form Thank you. ",
+    "Moretitle5": "Send",
+    "Moretitle6": "Name & Lastname",
+    "Moretitle7": "Integration and development Tsopze nekdem Phanuel arsene"
+  }
+}

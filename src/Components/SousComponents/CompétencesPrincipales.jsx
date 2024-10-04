@@ -4,7 +4,9 @@ import Mt from "../../assets/MT (1).png";
 import redux from "../../assets/Redux.png";
 import next from "../../assets/nextjs.png";
 import express from "../../assets/express.png";
-import Insomnia from "../../assets/Insomnia.png";
+import sql from "../../assets/sql.png";
+import sassO from "../../assets/sass.png";
+import jest from "../../assets/Jest.png";
 import sentry from "../../assets/Sentry.png";
 import vscode from "../../assets/vscode.png";
 import meta from "../../assets/meta.png";
@@ -23,7 +25,7 @@ function CompétencesPrincipales() {
   const analytics =
     "m512.216 393.834-2.048.012c-64.62 3.65-115.64 56.942-115.64 122.15 0 1 .01 1.994.035 2.986l-.003-.147v319.292c0 86.656 38.13 139.26 93.993 150.477 7.11 1.508 15.278 2.372 23.648 2.372 65.763 0 119.074-53.31 119.074-119.073v-.356.018-358.237-.218c0-65.797-53.278-119.15-119.047-119.275h-.012zm-314.82 360.288c-65.65 0-118.87 53.22-118.87 118.87s53.22 118.87 118.87 118.87 118.87-53.22 118.87-118.87c-.003-65.65-53.22-118.868-118.87-118.87zm748.08-602.09v720.366c0 65.875-53.402 119.278-119.278 119.278-4.96 0-9.848-.303-14.65-.89l.577.057c-59.42-9.038-104.425-59.77-104.425-121.013 0-1.038.013-2.073.04-3.105l-.004.153v-709.96c-.022-.868-.035-1.89-.035-2.915 0-61.318 45.113-112.1 103.96-120.965l.674-.084c4.16-.515 8.978-.808 13.863-.808 65.877 0 119.28 53.404 119.28 119.28v.635-.032z";
   const { t } = useTranslation();
-  const { Sectitle1, Sectitle2, Sectitle3 } = t("skills");
+  const { Sectitle1, Sectitle2, Sectitle3, more } = t("skills");
   const { title1, title2, title3, title5, title6, title7, title8 } =
     t("descriptiont");
 
@@ -217,7 +219,7 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
 
           <div className="w-[380px] py-4 px-4 flex gap-4 flex-col  justify-center   rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg  ">
             <div className="titre  font-bold text-[20px] ">
-              Communication &<span className="text-[#FFD43B]"> Marketing</span>
+              {more} &<span className="text-[#FFD43B]"> Marketing</span>
             </div>
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
@@ -318,20 +320,7 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
                 title="MongoDB est une base de données NoSQL open-source, conçue pour stocker et gérer de grandes quantités de données non structurées ou semi-structurées."
                 className="text-[30px] text-[#0076BF]"
               >
-                <svg width="54" height="54" viewBox="0 0 32 32">
-                  <path
-                    d="M15.9.087l.854 1.604c.192.296.4.558.645.802.715.715 1.394 1.464 2.004 2.266 1.447 1.9 2.423 4.01 3.12 6.292.418 1.394.645 2.824.662 4.27.07 4.323-1.412 8.035-4.4 11.12-.488.488-1.01.94-1.57 1.342-.296 0-.436-.227-.558-.436-.227-.383-.366-.82-.436-1.255-.105-.523-.174-1.046-.14-1.586v-.244C16.057 24.21 15.796.21 15.9.087z"
-                    fill="#599636"
-                  />
-                  <path
-                    d="M15.9.034c-.035-.07-.07-.017-.105.017.017.35-.105.662-.296.96-.21.296-.488.523-.767.767-1.55 1.342-2.77 2.963-3.747 4.776-1.3 2.44-1.97 5.055-2.16 7.808-.087.993.314 4.497.627 5.508.854 2.684 2.388 4.933 4.375 6.885.488.47 1.01.906 1.55 1.325.157 0 .174-.14.21-.244a4.78 4.78 0 0 0 .157-.68l.35-2.614L15.9.034z"
-                    fill="#6cac48"
-                  />
-                  <path
-                    d="M16.754 28.845c.035-.4.227-.732.436-1.063-.21-.087-.366-.26-.488-.453-.105-.174-.192-.383-.26-.575-.244-.732-.296-1.5-.366-2.248v-.453c-.087.07-.105.662-.105.75a17.37 17.37 0 0 1-.314 2.353c-.052.314-.087.627-.28.906 0 .035 0 .07.017.122.314.924.4 1.865.453 2.824v.35c0 .418-.017.33.33.47.14.052.296.07.436.174.105 0 .122-.087.122-.157l-.052-.575v-1.604c-.017-.28.035-.558.07-.82z"
-                    fill="#c2bfbf"
-                  />
-                </svg>
+                {/**sql */}
               </div>
               <div
                 title="Node.js est une plateforme de développement Javascript"
@@ -351,9 +340,9 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               </div>
               <div
                 title="SQL, pour Structured Query Language, est un langage qui permet d'interroger une base de données relationnelle afin de pouvoir modifier ou récupérer des informations."
-                className="text-[40px] text-[#0076BF]"
+                className="w-[40px] h-[40px] flex justify-center items-center"
               >
-                <i className="fa-solid fa-database"></i>
+                <img src={sql} alt="logo" className="w-full object-cover"></img>
               </div>
               <div
                 title="Postman est un logiciel qui va vous permettre d’appeler / tester une API.."
@@ -466,17 +455,27 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
                   </g>
                 </svg>
               </div>
+
               <div
-                title="Insomnia est une application qui permet de tester ses API et de créer des document OpenAPI."
+                title="SQL, pour Structured Query Language, est un langage qui permet d'interroger une base de données relationnelle afin de pouvoir modifier ou récupérer des informations."
                 className="w-[40px] h-[40px] flex justify-center items-center"
               >
                 <img
-                  src={Insomnia}
+                  src={jest}
                   alt="logo"
                   className="w-full object-cover"
                 ></img>
               </div>
-              {/**new */}
+              <div
+                title="est un langage de script préprocesseur qui est compilé ou interprété en CSS (Cascading Style Sheets). "
+                className="w-[40px] h-[40px] flex justify-center items-center"
+              >
+                <img
+                  src={sassO}
+                  alt="logo"
+                  className="w-full object-cover"
+                ></img>
+              </div>
               <div
                 title="Visual Studio Code est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS"
                 className="w-[40px] h-[50px] flex justify-center items-center"
@@ -509,7 +508,6 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
                   className="w-full object-cover"
                 ></img>
               </div>
-
               <div
                 title="Wix Studio est une nouvelle plateforme de création de sites web développée par Wix, qui combine un éditeur visuel avancé et des outils de personnalisation flexibles. "
                 className="  h-[23px] bg-red-400 flex justify-center items-center"

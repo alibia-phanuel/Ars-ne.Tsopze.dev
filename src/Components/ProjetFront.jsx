@@ -1,6 +1,6 @@
 import { FaLaptopCode } from "react-icons/fa6";
 import { MdInstallMobile } from "react-icons/md";
-import { TbDeviceAnalytics } from "react-icons/tb";
+// import { TbDeviceAnalytics } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
 import {
   Tabs,
@@ -25,6 +25,15 @@ import css from "../assets/css.png";
 import html from "../assets/html.png";
 import vscode from "../assets/vscode.png";
 import axios from "../assets/axios.png";
+// image project mobile
+import typescript from "../assets/typescript.png";
+import mobilOne from "../assets/mobil/one.png";
+import pke from "../assets/mobil/poemon.jpg";
+import mobilTwo from "../assets/mobil/two.png";
+import threes from "../assets/mobil/three.png";
+import fours from "../assets/mobil/Four.png";
+import expo from "../assets/expo.png";
+import rn from "../assets/R.N.png";
 //images et videos des projets
 import iohone from "../assets/ProjectWeb/images/1.png";
 import plante from "../assets/ProjectWeb/images/3.png";
@@ -35,8 +44,8 @@ import coofeHtml from "../assets/ProjectWeb/images/9.png";
 import appJon from "../assets/ProjectWeb/images/4.png";
 import agence from "../assets/ProjectWeb/images/2.png";
 //last
-import netflixe from "../assets/ProjectWeb/images/2.png";
-import alibiaEcommerce from "../assets/ProjectWeb/images/2.png";
+// import netflixe from "../assets/ProjectWeb/images/2.png";
+// import alibiaEcommerce from "../assets/ProjectWeb/images/2.png";
 //image et video mobile projet
 //Tranduction dependances
 
@@ -106,7 +115,7 @@ function ProjetFront() {
       isdevProject: (
         <BookingCard
           imgHeader={plante}
-          titleProject="ite e-commerce monoproduit de plantes"
+          titleProject="site e-commerce monoproduit de plantes"
           desc="J'ai conçu et développé un site e-commerce monoproduit dédié à la vente de plantes en utilisant React JS et Tailwind CSS. Ce projet met en avant ma capacité à créer une boutique en ligne moderne et épurée, optimisée pour les ventes d'un produit spécifique. Grâce à React JS, j'ai pu intégrer une interface réactive et intuitive, tandis que Tailwind CSS a permis de concevoir un design minimaliste et entièrement responsive. Ce projet illustre mon savoir-faire en développement d'applications e-commerce axées sur une expérience utilisateur simple et efficace, adaptée à tous types d'appareils."
           icone1={tailwind}
           icone2={react}
@@ -146,11 +155,11 @@ function ProjetFront() {
       appJon: (
         <BookingCard
           imgHeader={appJon}
-          titleProject=" Site de Promotion d'App Mobile avec Next.js"
+          titleProject="Site de Promotion d'App Mobile avec Next.js"
           desc="Développement d'un site multilingue conçu pour inciter les utilisateurs à télécharger une application mobile. Utilisation de Next.js pour une performance optimale et Tailwind CSS pour une interface moderne et réactive."
-          icone1={tailwind}
-          icone2={netxt}
-          icone3={vscode}
+          icone1={vscode}
+          icone2={tailwind}
+          icone3={netxt}
           icone4={code}
           linkCode="https://github.com/alibia-phanuel/isdevProject"
           linkDemo="https://isdev-project.vercel.app/fr"
@@ -174,18 +183,81 @@ function ProjetFront() {
       label: "Mobile",
       icon: <MdInstallMobile className="text-[35px]" />,
       value: "Mobile",
-      desc: `Because it's about motivating the doers. Because I'm here
-      to follow my dreams and inspire other people to follow their dreams, too.`,
+      mobilbeOne: (
+        <BookingCard
+          imgHeader={mobilOne}
+          titleProject="Découverte de React Native et Expo"
+          desc="Dans le cadre de ma formation en développement mobile, j'ai développé ma première application avec React Native et Expo. En utilisant la commande `npx create-expo-app@latest`, j'ai pu configurer mon projet rapidement et découvrir les fonctionnalités puissantes de cet environnement. Cette expérience m'a permis d'acquérir une solide compréhension des bases de la création d'applications mobiles modernes."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={mobile}
+          linkCode="https://github.com/alibia-phanuel/firstReactNativeProjetApp"
+          linkDemo="https://github.com/alibia-phanuel/firstReactNativeProjetApp"
+        />
+      ),
+      mobilbeTwo: (
+        <BookingCard
+          imgHeader={mobilTwo}
+          titleProject="Ma deuxième application mobile"
+          desc="Dans le cadre de ma formation, j'ai développé ma deuxième application mobile avec React Native, Expo et TypeScript. Ce projet m'a permis d'approfondir mes compétences en organisation et stylisation des composants, d'améliorer la structure de mon code, et d'offrir une expérience utilisateur fluide. J'ai également renforcé ma maîtrise de la gestion des composants dans un environnement mobile, tout en consolidant mes bases en TypeScript.."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={mobile}
+          linkCode="https://github.com/alibia-phanuel/ReactNativeStyleProjetAppTwo"
+          linkDemo="https://github.com/alibia-phanuel/ReactNativeStyleProjetAppTwo"
+        />
+      ),
+      mobilThree: (
+        <BookingCard
+          imgHeader={threes}
+          titleProject="Application Mobile : Changement de Couleur aléatoire"
+          desc="Dans le cadre de ma formation en développement mobile, j'ai réalisé une application React Native qui change la couleur d'arrière-plan à chaque clic sur un bouton, en utilisant StyleSheet, Text, TouchableOpacity et le Hook useState. Ce projet illustre mes compétences en gestion de l'état et organisation des composants pour créer des interfaces dynamiques et interactives."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={mobile}
+          linkCode="https://github.com/alibia-phanuel/ReactNativePressMeAppThee"
+          linkDemo="https://github.com/alibia-phanuel/ReactNativePressMeAppThee"
+        />
+      ),
+      mobilFor: (
+        <BookingCard
+          imgHeader={fours}
+          titleProject="Application de lancer de dés"
+          desc="Cette application mobile, développée avec React Native, Expo et TypeScript, simule un lancer de dés avec des résultats aléatoires. Elle utilise des composants comme StyleSheet, View, Text, Image et Pressable, et gère la randomisation via le hook useState. L'interface utilisateur est fluide et réactive, idéale pour un usage numérique de lancer de dés."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={mobile}
+          linkCode="https://github.com/alibia-phanuel/ReactNativeStyleProjetAppTwo"
+          linkDemo="https://github.com/alibia-phanuel/ReactNativeStyleProjetAppTwo"
+        />
+      ),
+      mobilFive: (
+        <BookingCard
+          imgHeader={pke}
+          titleProject="Application pokemon via API"
+          desc="Dans le cadre de mon apprentissage de React Native, j'ai développé une application Pokédex connectée à l'API PokéAPI. Elle affiche une liste de Pokémon avec recherche par nom ou numéro. Ce projet a renforcé mes compétences en gestion d'états, consommation d'API REST et optimisation des performances."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={mobile}
+          linkCode="https://github.com/alibia-phanuel/PokeMonApp"
+          linkDemo="https://github.com/alibia-phanuel/PokeMonApp"
+        />
+      ),
     },
 
-    {
-      label: "Marketing & Communication",
-      icon: <TbDeviceAnalytics className="text-[35px]" />,
-      value: "Marketing & Communication",
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
-    },
+    // {
+    //   label: "Marketing & Communication",
+    //   icon: <TbDeviceAnalytics className="text-[35px]" />,
+    //   value: "Marketing & Communication",
+    //   desc: `We're not always in the position that we want to be at.
+    //   We're constantly growing. We're constantly making mistakes. We're
+    //   constantly trying to express ourselves and actualize our dreams.`,
+    // },
   ];
 
   return (
@@ -229,6 +301,11 @@ function ProjetFront() {
                   dashbordJoneEasy,
                   agence,
                   coofeHtml,
+                  mobilFor,
+                  mobilFive,
+                  mobilThree,
+                  mobilbeOne,
+                  mobilbeTwo,
                   appJon,
                 }) => (
                   <TabPanel
@@ -244,6 +321,11 @@ function ProjetFront() {
                     {dashbordJoneEasy}
                     {siteDePlante}
                     {coofeHtml}
+                    {mobilFive}
+                    {mobilFor}
+                    {mobilThree}
+                    {mobilbeTwo}
+                    {mobilbeOne}
                   </TabPanel>
                 )
               )}

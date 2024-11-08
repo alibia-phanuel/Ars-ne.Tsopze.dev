@@ -2,6 +2,8 @@ import tailwind from "../../assets/tailwind.png";
 import axios from "../../assets/axios.png";
 import Mt from "../../assets/MT (1).png";
 import redux from "../../assets/Redux.png";
+import scripe from "../../assets/stripe.png";
+import paypal from "../../assets/payPal.png";
 import next from "../../assets/nextjs.png";
 import express from "../../assets/express.png";
 import sql from "../../assets/sql.png";
@@ -54,7 +56,7 @@ function CompétencesPrincipales() {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}
-          className="skils font-[roboto] flex gap-4   max-md:justify-center max-md:flex-wrap"
+          className="skils font-[roboto] flex gap-4   max-md:justify-center max-md:flex-wrap  justify-between"
         >
           <div className="w-[380px] py-4 px-4 flex gap-5 flex-col  justify-center rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg ">
             <div className="titre  font-bold text-[20px] ">
@@ -217,7 +219,7 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
             <div className="description">{title2}</div>
           </div>
 
-          <div className="w-[380px] py-4 px-4 flex gap-4 flex-col  justify-center   rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg  ">
+          <div className="w-[380px] py-4 px-4 flex gap-4 flex-col hidden  justify-center   rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg  ">
             <div className="titre  font-bold text-[20px] ">
               {more} &<span className="text-[#FFD43B]"> Marketing</span>
             </div>
@@ -510,12 +512,33 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               </div>
               <div
                 title="Wix Studio est une nouvelle plateforme de création de sites web développée par Wix, qui combine un éditeur visuel avancé et des outils de personnalisation flexibles. "
-                className="  h-[23px] bg-red-400 flex justify-center items-center"
+                className="h-[23px]  flex justify-center items-center "
               >
                 <img
                   src={win}
                   alt="logo"
                   className=" h-full w-full object-cover"
+                ></img>
+              </div>
+              <div
+                title="Stripe est une plateforme de paiement en ligne qui fournit une suite d’outils et d'API puissants pour permettre aux développeurs d’intégrer des solutions de paiement dans leurs applications et sites web."
+                className="w-[40px] h-[50px] flex justify-center items-center bg-white rounded-lg "
+              >
+                <img
+                  src={scripe}
+                  alt="logo"
+                  className="w-full object-cover"
+                ></img>
+              </div>
+
+              <div
+                title="PayPal est une plateforme de paiement en ligne qui offre aux développeurs des outils et des API pour intégrer des options de paiement sécurisées et fiables dans leurs applications web et mobiles"
+                className="w-[40px] h-[50px] flex justify-center p-2 items-center bg-white  rounded-lg"
+              >
+                <img
+                  src={paypal}
+                  alt="logo"
+                  className="w-full object-cover"
                 ></img>
               </div>
             </div>

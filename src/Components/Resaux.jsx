@@ -1,7 +1,5 @@
 //Tranduction dependances
 import { useTranslation } from "react-i18next";
-import upwork from "../assets/marketing/upwork.png";
-
 function Resaux() {
   const { t } = useTranslation();
   const { Moretitle1, Moreitle2 } = t("Footer");
@@ -89,18 +87,6 @@ function Resaux() {
             </a>
           </div>
 
-          <div className="bg-[#242526] hover:bg-[#313552] text-white capitalize font-bold border border-[#FFD43B] w-[300px] p-4 rounded-lg">
-            <a
-              target="_blanck"
-              href="https://www.upwork.com/freelancers/~0119d7d6945c02ed2f"
-              className="flex justify-between  items-center  gap-4"
-            >
-              <div className="relative w-[42px] bg-white  rounded-lg">
-                <img src={upwork} alt="upwork" className="w-full" />
-              </div>
-              <div>upwork</div>
-            </a>
-          </div>
           {/**hidden  malt*/}
 
           {/**hidden */}

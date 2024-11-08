@@ -57,9 +57,10 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
           </Tooltip>
           <Tooltip content="Free wifi">
             <div
+            
               title="
 Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HTTP, principalement dans des applications front-end React, Vue ou Angular."
-              className="cursor-pointer rounded-full border border-gray-900/5 bg-gray-900/5 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70"
+              className="cursor-pointer rounded-full  border border-gray-900/5 bg-gray-600 p-3 text-gray-900 transition-colors hover:border-gray-900/10 hover:bg-gray-900/10 hover:!opacity-100 group-hover:opacity-70"
             >
               <img
                 src={icone2}

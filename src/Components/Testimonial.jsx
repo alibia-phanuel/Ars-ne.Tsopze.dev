@@ -30,13 +30,13 @@ const Testimonial = () => {
               <div className="w-full  flex  justify-center items-center flex-col gap-6">
                 <div className=" flex flex-col justify-center items-center gap-2">
                   <img
-                    className="rounded-full w-[100px] h-[100px]"
+                    className="rounded-full w-[120px] h-[120px] bg-[#FFD43B] p-1"
                     src={is}
                     alt=""
                   />
                   <div className="gap-2 flex flex-col justify-center items-center">
                     <p>ismael issan</p>
-                    <p className="font-semibold text-[#FFD43B]">
+                    <p className="font-semibold text-[#FFD43B] text-center">
                       CEO & Founder at IS Dev Experts S.A.S
                     </p>
                     <p className="flex justify-center items-center text-2xl">
@@ -68,13 +68,13 @@ const Testimonial = () => {
               <div className="w-full  flex  justify-center items-center flex-col gap-6">
                 <div className=" flex flex-col justify-center items-center gap-2">
                   <img
-                    className="rounded-full w-[100px] h-[100px]"
+                    className="rounded-full w-[120px] h-[120px] bg-[#FFD43B] p-1"
                     src="https://img.freepik.com/free-vector/bangkok-thailand-may-12-2023-caricature-tiger-woods-smilin_1308-135728.jpg?t=st=1731228524~exp=1731232124~hmac=0491259a60b984a03e4611799c108d3c9a37755ae1d00ac0ab4dae4cfd9d7da7&w=1380"
                     alt="photo profil"
                   />
                   <div className="gap-2 flex flex-col justify-center items-center">
                     <p>Hermanne Koffi</p>
-                    <p className="font-semibold text-[#FFD43B]">
+                    <p className="font-semibold text-[#FFD43B] text-center">
                       Propriétaire de l&apos;application{" "}
                       <span className="underline">
                         <a href="">Sweet</a>

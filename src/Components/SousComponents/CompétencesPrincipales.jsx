@@ -1,6 +1,7 @@
 import tailwind from "../../assets/tailwind.png";
 import axios from "../../assets/axios.png";
 import Mt from "../../assets/MT (1).png";
+import shadcn from "../../assets/shadcn.png";
 import redux from "../../assets/Redux.png";
 import scripe from "../../assets/stripe.png";
 import paypal from "../../assets/payPal.png";
@@ -21,8 +22,11 @@ import NEON from "../../assets/NEON.png";
 import win from "../../assets/wix.jpg";
 import shop from "../../assets/shopify.png";
 import sass from "../../assets/GSAP.png";
+import { FcApproval } from "react-icons/fc";
+import { FaRegStarHalfStroke } from "react-icons/fa6";
 //Tranduction dependances
 import { useTranslation } from "react-i18next";
+import { MdOutlineStar } from "react-icons/md";
 function CompétencesPrincipales() {
   const analytics =
     "m512.216 393.834-2.048.012c-64.62 3.65-115.64 56.942-115.64 122.15 0 1 .01 1.994.035 2.986l-.003-.147v319.292c0 86.656 38.13 139.26 93.993 150.477 7.11 1.508 15.278 2.372 23.648 2.372 65.763 0 119.074-53.31 119.074-119.073v-.356.018-358.237-.218c0-65.797-53.278-119.15-119.047-119.275h-.012zm-314.82 360.288c-65.65 0-118.87 53.22-118.87 118.87s53.22 118.87 118.87 118.87 118.87-53.22 118.87-118.87c-.003-65.65-53.22-118.868-118.87-118.87zm748.08-602.09v720.366c0 65.875-53.402 119.278-119.278 119.278-4.96 0-9.848-.303-14.65-.89l.577.057c-59.42-9.038-104.425-59.77-104.425-121.013 0-1.038.013-2.073.04-3.105l-.004.153v-709.96c-.022-.868-.035-1.89-.035-2.915 0-61.318 45.113-112.1 103.96-120.965l.674-.084c4.16-.515 8.978-.808 13.863-.808 65.877 0 119.28 53.404 119.28 119.28v.635-.032z";
@@ -60,8 +64,18 @@ function CompétencesPrincipales() {
         >
           <div className="w-[380px] py-4 px-4 flex gap-5 flex-col  justify-center rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg ">
             <div className="titre  font-bold text-[20px] ">
-              Language & framework <br />
-              <span className="text-[#FFD43B]">Front-End</span>
+              <div className="flex  items-center justify-between">
+                <p>
+                  <span className="flex items-center gap-2">
+                    Language & framework <FcApproval />
+                  </span>
+
+                  <span className="text-[#FFD43B] flex items-center gap-2">
+                    Front-End <MdOutlineStar /> <MdOutlineStar />{" "}
+                    <MdOutlineStar /> <MdOutlineStar /> <MdOutlineStar />
+                  </span>
+                </p>
+              </div>
             </div>
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
@@ -140,10 +154,14 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                 ></img>
               </div>
               <div
-                title="Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web."
-                className="text-[35px] text-[#FFFFFF]"
+                title="Shadcn est une bibliothèque de composants pour React. "
+                className="w-[40px] h-[40px] flex justify-center items-center bg-white rounded-lg  p-2"
               >
-                <i className="fa-brands fa-bootstrap"></i>
+                <img
+                  src={shadcn}
+                  alt="logo"
+                  className="w-full object-cover"
+                ></img>
               </div>
               {/**new */}
               <div
@@ -174,8 +192,15 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
 
           <div className="w-[380px] py-4 px-4 flex gap-10 flex-col  justify-center  rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg ">
             <div className="titre  font-bold text-[20px] ">
-              Language & framework <br />
-              <span className="text-[#FFD43B]">Mobile</span>
+              <span className="flex items-center gap-2">
+                Language & framework <FcApproval />
+              </span>
+
+              <span className="text-[#FFD43B] flex items-center gap-2">
+                Mobile
+                <MdOutlineStar /> <MdOutlineStar /> <MdOutlineStar />{" "}
+                <FaRegStarHalfStroke />
+              </span>
             </div>
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
@@ -312,9 +337,12 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
             </div>
           </div>
           <div className="w-[380px] py-4 px-4 flex gap-2 flex-col justify-between  rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg ">
-            <div className="titre my-2 font-bold text-[24px] ">
+            <div className="titre my-2 font-bold text-[22px]">
               {Sectitle2}
-              <span className="text-[#FFD43B]"> {Sectitle3}</span>
+              <span className="text-[#FFD43B] flex items-center gap-2">
+                {Sectitle3} <MdOutlineStar /> <MdOutlineStar />{" "}
+                <MdOutlineStar />
+              </span>
             </div>
 
             <div className="icones-language  flex items-center gap-2 flex-wrap">

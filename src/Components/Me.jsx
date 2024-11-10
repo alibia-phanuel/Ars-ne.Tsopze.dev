@@ -86,7 +86,6 @@ const Me = () => {
         </span>
       </div>
       <HorizontalScrollCarousel />
-      <Resaux />
     </div>
   );
 };

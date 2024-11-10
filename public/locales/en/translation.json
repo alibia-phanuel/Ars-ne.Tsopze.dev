@@ -3,6 +3,7 @@
     "link1": "Who am I?",
     "link2": "My skills?",
     "link3": "Achievements",
+    "link7": "Testimonial",
     "link4": "Contact me",
     "link5": "Download My CV",
     "link6": "language"
@@ -45,7 +46,7 @@
   },
   "Marketing": {},
   "FullStack": {
-    "Sectitle8": "Technology watch marketing & design trends (web | mobile)",
+    "Sectitle8": "Testimonials",
     "Sectitle9": "HOBIES & PASTIMES"
   },
   "modal": {

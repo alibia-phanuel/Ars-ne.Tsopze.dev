@@ -4,7 +4,7 @@ function Resaux() {
   const { t } = useTranslation();
   const { Moretitle1, Moreitle2 } = t("Footer");
   return (
-    <div className="flex bg-[#221C27]   items-center justify-center  ">
+    <div className="flex   items-center justify-center  ">
       <div className="container px-4 ">
         <div className="title my-10 max-md:flex max-md:flex-col max-md:items-center max-md:justify-center">
           <span className="font-semibold uppercase  text-[12px] text-[#FFD43B]">

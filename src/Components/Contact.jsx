@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import Resaux from "./Resaux";
 //Tranduction dependances
 import { useTranslation } from "react-i18next";
 function Contact() {
@@ -24,6 +25,7 @@ function Contact() {
   return (
     <div id="contact" className="bg-[#313552] flex justify-center items-center">
       <div className="mx-4 container  py-[50px] flex flex-col justify-center items-center">
+        <Resaux />
         <div className="my-[100px] flex justify-center items-center flex-col">
           <h1 className="font-[roboto] text-[#FFD43B] text-[30px] capitalize">
             {Moretitle3}

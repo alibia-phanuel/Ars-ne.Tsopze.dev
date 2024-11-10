@@ -1,10 +1,10 @@
 //Tranduction dependances
 import { useTranslation } from "react-i18next";
-// import Modal from "../Components/Modal";
+
 import LangueSelector from "./SousComponent/LangueSelector";
 function Header() {
   const { t } = useTranslation();
-  const { link1, link2, link3, link4 } = t("menu");
+  const { link1, link2, link3, link4, link7 } = t("menu");
 
   return (
     <>
@@ -21,8 +21,12 @@ function Header() {
               <li className="py-1 hover:border-b-2 transition-all ease-in-out border-[#FFD43B]">
                 <a href="#skils">{link2}</a>
               </li>
+
               <li className="py-1 hover:border-b-2 transition-all ease-in-out border-[#FFD43B]">
                 <a href="#Réalisations">{link3} </a>
+              </li>
+              <li className="py-1 hover:border-b-2 transition-all ease-in-out border-[#FFD43B]">
+                <a href="#Testimonial">{link7} </a>
               </li>
               <li className="py-1 hover:border-b-2 transition-all ease-in-out border-[#FFD43B]">
                 <a href="#contact">{link4} </a>

@@ -1,7 +1,9 @@
 import { FaLaptopCode } from "react-icons/fa6";
 import { MdInstallMobile } from "react-icons/md";
+import alibiaimg from "../assets/ProjectWeb/images/11.png";
 // import { TbDeviceAnalytics } from "react-icons/tb";
 import { useTranslation } from "react-i18next";
+
 import {
   Tabs,
   TabsHeader,
@@ -11,8 +13,14 @@ import {
 } from "@material-tailwind/react";
 import { BookingCard } from "./Card";
 //icone des  project
+import Ga from "../assets/ga.png";
+import meta from "../assets/meta.png";
+import gpt from "../assets/gpt (2).png";
+import sanity from "../assets/sanity.png";
 import three from "../assets/three.png";
 import tailwind from "../assets/tailwind.png";
+import wixS from "../assets/wix.png";
+import shart from "../assets/shadcn.png";
 import react from "../assets/React.webp";
 import api from "../assets/RapidAPI.png";
 import code from "../assets/code.png";
@@ -22,6 +30,7 @@ import formik from "../assets/formik.svg";
 import netxt from "../assets/nextjs.png";
 import mobile from "../assets/codemobile.png";
 import css from "../assets/css.png";
+
 import html from "../assets/html.png";
 import vscode from "../assets/vscode.png";
 import axios from "../assets/axios.png";
@@ -43,6 +52,7 @@ import youtubeClone from "../assets/ProjectWeb/images/8.png";
 import coofeHtml from "../assets/ProjectWeb/images/9.png";
 import appJon from "../assets/ProjectWeb/images/4.png";
 import agence from "../assets/ProjectWeb/images/2.png";
+import startup from "../assets/ProjectWeb/images/12.png";
 //last
 // import netflixe from "../assets/ProjectWeb/images/2.png";
 // import alibiaEcommerce from "../assets/ProjectWeb/images/2.png";
@@ -58,6 +68,33 @@ function ProjetFront() {
       label: "Web",
       icon: <FaLaptopCode className="text-[35px]" />,
       value: "Web",
+      alibia: (
+        <BookingCard
+          imgHeader={alibiaimg}
+          titleProject="Site E-commerce Alibia conçu avec Next.js 15 et Wix Studio"
+          desc="Développement d’un site e-commerce moderne pour produits électroniques, alliant performance (Next.js 15, shadcn/ui), backend dynamique (API Wix Studios) et outils marketing (Google Analytics, Pixel Facebook, GPT). Fonctionnalités : navigation intuitive, commandes fluides, suivi analytique, et intégration WhatsApp pour simplifier les ventes."
+          icone1={netxt}
+          icone2={gpt}
+          icone3={meta}
+          icone4={Ga}
+          icone5={shart}
+          icone6={wixS}
+          linkCode="https://github.com/alibia-phanuel/IphoneClone3d"
+          linkDemo="https://alibia.net"
+        />
+      ),
+      startup: (
+        <BookingCard
+          imgHeader={startup}
+          titleProject="Développement d'une Plateforme de Pitch de Startups avec Next.js 15 et Sanity.io"
+          desc="Dans ma formation Next.js 15, j'ai créé une plateforme permettant aux utilisateurs de pitcher leur startup, avec une fonctionnalité de recherche pour les visiteurs. Le back-end est géré par Sanity.io, assurant une gestion flexible et scalable du contenu. L'application met en œuvre des concepts avancés de Next.js 15 et une solution moderne de gestion de contenu.shadcn/ui pour le style."
+          icone1={netxt}
+          icone2={shart}
+          icone3={sanity}
+          linkCode="https://github.com/alibia-phanuel/nextjs15ProjectWeb/tree/main/start-up-app-with-nextjs15"
+          linkDemo="https://nextjs15-project-web.vercel.app/"
+        />
+      ),
       iphoneClone3d: (
         <BookingCard
           imgHeader={iohone}
@@ -67,7 +104,6 @@ function ProjetFront() {
           icone2={react}
           icone3={three}
           icone4={Gsap}
-          icone5={three}
           linkCode="https://github.com/alibia-phanuel/IphoneClone3d"
           linkDemo="https://iphone-clone3d.vercel.app/"
         />
@@ -307,18 +343,22 @@ function ProjetFront() {
                   mobilbeOne,
                   mobilbeTwo,
                   appJon,
+                  startup,
+                  alibia,
                 }) => (
                   <TabPanel
                     key={value}
                     value={value}
                     className="flex  justify-center flex-wrap gap-8 items-center"
                   >
-                    {appJon}
+                    {alibia}
+                    {startup}
                     {iphoneClone3d}
                     {youtubeClone}
+                    {appJon}
+                    {dashbordJoneEasy}
                     {modernUiuXin}
                     {agence}
-                    {dashbordJoneEasy}
                     {siteDePlante}
                     {coofeHtml}
                     {mobilFive}

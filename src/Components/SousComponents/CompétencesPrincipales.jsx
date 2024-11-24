@@ -1,17 +1,16 @@
 import tailwind from "../../assets/tailwind.png";
-import axios from "../../assets/axios.png";
+
 import Mt from "../../assets/MT (1).png";
 import shadcn from "../../assets/shadcn.png";
 import redux from "../../assets/Redux.png";
 import scripe from "../../assets/stripe.png";
-import paypal from "../../assets/payPal.png";
+import library from "../../assets/testing.png";
 import next from "../../assets/nextjs.png";
 import express from "../../assets/express.png";
 import sql from "../../assets/sql.png";
-import sassO from "../../assets/sass.png";
 import jest from "../../assets/Jest.png";
+import zustand from "../../assets/Zustand.svg";
 import sentry from "../../assets/Sentry.png";
-import vscode from "../../assets/vscode.png";
 import meta from "../../assets/meta.png";
 import three from "../../assets/three.png";
 import typescript from "../../assets/typescript.png";
@@ -20,7 +19,6 @@ import Rn from "../../assets/R.N.png";
 import expo from "../../assets/expo.png";
 import NEON from "../../assets/NEON.png";
 import win from "../../assets/wix.jpg";
-import shop from "../../assets/shopify.png";
 import sass from "../../assets/GSAP.png";
 import { FcApproval } from "react-icons/fc";
 import { FaRegStarHalfStroke } from "react-icons/fa6";
@@ -164,15 +162,25 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                 ></img>
               </div>
               {/**new */}
+
               <div
-                title="
-Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HTTP, principalement dans des applications front-end React, Vue ou Angular."
-                className="h-[40px] w-[60] flex justify-center items-center bg-white p-2 rounded-lg"
+                title="Jest est un framework de test JavaScript open-source, créé par Facebook. Il est principalement utilisé pour tester des applications JavaScript, notamment celles développées avec des bibliothèques et frameworks comme React, Node.js, et autres technologies modernes."
+                className="w-[40px] bg-white rounded-lg p-2 h-[40px] flex justify-center items-center"
               >
                 <img
-                  src={axios}
+                  src={jest}
                   alt="logo"
-                  className=" object-cover  h-[60px]  "
+                  className="w-full object-cover"
+                ></img>
+              </div>
+              <div
+                title="Jest est un framework de test JavaScript open-source, créé par Facebook. Il est principalement utilisé pour tester des applications JavaScript, notamment celles développées avec des bibliothèques et frameworks comme React, Node.js, et autres technologies modernes."
+                className="w-[40px] bg-white rounded-lg p-2 h-[40px] flex justify-center items-center"
+              >
+                <img
+                  src={library}
+                  alt="logo"
+                  className="w-full object-cover"
                 ></img>
               </div>
 
@@ -205,7 +213,7 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
                 title="est un langage qui peut être vu comme une version du JavaScript."
-                className="w-[55px] h-[40px] flex justify-center items-center"
+                className="w-[40px]  h-[50px] flex justify-center items-center"
               >
                 <img
                   src={typescript}
@@ -216,13 +224,13 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
               {/**new */}
               <div
                 title="React Native est un framework open-source développé par Facebook qui permet de créer des applications mobiles en utilisant JavaScript et React."
-                className=" flex justify-center bg-white items-center w-[60px]  h-[50px]  p-2 rounded-lg"
+                className=" flex justify-center bg-white items-center w-[40px]  h-[50px]  p-2 rounded-lg"
               >
-                <img src={Rn} alt="logo" className="object-cover " />
+                <img src={Rn} alt="logo" className="object-cover w-full " />
               </div>
               <div
                 title="Expo est une plateforme et un ensemble d'outils qui facilitent le développement d'applications mobiles avec React Native."
-                className=" w-[60px]  h-[50px] bg-[#0F291E] flex justify-center items-center  p-2 rounded-lg"
+                className="w-[40px]  h-[50px] bg-[#0F291E] flex justify-center items-center  p-2 rounded-lg"
               >
                 <img
                   src={expo}
@@ -230,128 +238,42 @@ Axios est une bibliothèque JavaScript utilisée pour effectuer des requêtes HT
                   className="w-full object-cover  "
                 ></img>
               </div>
+
               <div
                 title="Neon est une plateforme de bases de données PostgreSQL cloud-native."
-                className="w-[60px] h-[50px] flex bg-[#191919] justify-center items-center  p-2 rounded-lg"
+                className="w-[40px]  h-[50px]  flex bg-[#191919] justify-center items-center  p-2 rounded-lg"
               >
                 <img
                   src={NEON}
                   alt="logo"
-                  className="w-full object-cover "
+                  className="w-[40px]   object-cover "
                 ></img>
+              </div>
+              <div
+                title="Neon est une plateforme de bases de données PostgreSQL cloud-native."
+                className="w-[120px]  h-[50px] gap-2 flex  bg-[#191919] justify-center items-center  p-2 rounded-lg"
+              >
+                <img
+                  src={zustand}
+                  alt="logo"
+                  className="w-[30px] h-[35px] object-cover "
+                ></img>
+                <p>zustand</p>
               </div>
             </div>
             <div className="description">{title2}</div>
           </div>
 
-          <div className="w-[380px] py-4 px-4 flex gap-4 flex-col hidden  justify-center   rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg  ">
-            <div className="titre  font-bold text-[20px] ">
-              {more} &<span className="text-[#FFD43B]"> Marketing</span>
-            </div>
-            <div className="icones-language  flex items-center gap-4 flex-wrap">
-              <div
-                title="Meta fait référence à plusieurs concepts, mais dans le contexte technologique actuel, Meta est surtout connu comme le nouveau nom de la société mère de Facebook."
-                className="w-[40px] h-[40px] text-[#F7DF1E]"
-              >
-                <img
-                  src={meta}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-
-              <div
-                title="
-ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architecture GPT (Generative Pre-trained Transformer)."
-                className="text-[35px] text-[#FFFFFF]"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  x="0px"
-                  y="0px"
-                  width="48"
-                  height="48"
-                  viewBox="0 0 48 48"
-                >
-                  <path
-                    fill="#11773E"
-                    d="M30.7,7.27L28.33,9.1c-1.605-2.067-4.068-3.209-6.697-3.092C17.313,6.2,14,9.953,14,14.277l0,9.143	l10.5,6.12l-1,1.72l-11.706-6.827C11.302,24.146,11,23.62,11,23.051l0-8.687C11,8.1,16.129,2.79,22.39,3.007	C25.669,3.12,28.68,4.663,30.7,7.27z"
-                  ></path>
-                  <path
-                    fill="#11773E"
-                    d="M12.861,9.833l0.4,2.967c-2.592,0.357-4.813,1.919-6.026,4.254c-1.994,3.837-0.4,8.582,3.345,10.745	l7.918,4.571l10.55-6.033l0.99,1.726l-11.765,6.724c-0.494,0.282-1.101,0.281-1.594-0.003l-7.523-4.343	C3.73,27.308,1.696,20.211,5.014,14.898C6.752,12.114,9.594,10.279,12.861,9.833z"
-                  ></path>
-                  <path
-                    fill="#11773E"
-                    d="M6.161,26.563l2.77,1.137c-0.987,2.423-0.745,5.128,0.671,7.346	c2.326,3.645,7.233,4.638,10.977,2.476l7.918-4.572l0.05-12.153l1.99,0.006l-0.059,13.551c-0.002,0.569-0.307,1.094-0.8,1.379	l-7.523,4.343c-5.425,3.132-12.588,1.345-15.531-4.185C5.083,32.994,4.914,29.616,6.161,26.563z"
-                  ></path>
-                  <path
-                    fill="#11773E"
-                    d="M17.3,40.73l2.37-1.83c1.605,2.067,4.068,3.209,6.697,3.092C30.687,41.8,34,38.047,34,33.723l0-9.143	l-10.5-6.12l1-1.72l11.706,6.827C36.698,23.854,37,24.38,37,24.949l0,8.687c0,6.264-5.13,11.574-11.39,11.358	C22.331,44.88,19.32,43.337,17.3,40.73z"
-                  ></path>
-                  <path
-                    fill="#11773E"
-                    d="M35.139,38.167l-0.4-2.967c2.592-0.357,4.813-1.919,6.026-4.254c1.994-3.837,0.4-8.582-3.345-10.745	l-7.918-4.571l-10.55,6.033l-0.99-1.726l11.765-6.724c0.494-0.282,1.101-0.281,1.594,0.003l7.523,4.343	c5.425,3.132,7.459,10.229,4.141,15.543C41.248,35.886,38.406,37.721,35.139,38.167z"
-                  ></path>
-                  <path
-                    fill="#11773E"
-                    d="M41.839,21.437l-2.77-1.137c0.987-2.423,0.745-5.128-0.671-7.346	c-2.326-3.645-7.233-4.638-10.977-2.476l-7.918,4.572l-0.05,12.153l-1.99-0.006l0.059-13.551c0.002-0.569,0.307-1.094,0.8-1.379	l7.523-4.343c5.425-3.132,12.588-1.345,15.531,4.185C42.917,15.006,43.086,18.384,41.839,21.437z"
-                  ></path>
-                </svg>
-              </div>
-
-              <div
-                title="Google Analytics est un service gratuit d'analyse d'audience d'un site Web ou d'applications "
-                className="w-[50px] h-[50px] flex justify-center items-center"
-              >
-                <svg
-                  viewBox="0 0 1024 1176.463"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#ed750a"
-                >
-                  <path d={analytics} />
-                </svg>
-              </div>
-
-              <div
-                title="Shopify est une plateforme de commerce en ligne (e-commerce) qui permet à des entreprises et des particuliers de créer et gérer facilement leur propre boutique en ligne."
-                className="w-[80px] h-[50px] flex justify-center items-center bg-white  rounded-lg"
-              >
-                <img
-                  src={sentry}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-            </div>
-            {/***JJ */}
-            <div className="description">
-              <span className="font-bold text-[#ffd43b]">Méta</span> {title5}{" "}
-              <br /> <span className="font-bold text-[#ffd43b]">ChatGPT</span>{" "}
-              {title6} <br />{" "}
-              <span className="font-bold text-[#ffd43b]">
-                Google analytique
-              </span>{" "}
-              <br /> {title7} <br />
-              <span className="font-bold text-[#ffd43b]">Sentry</span> {title8}
-            </div>
-          </div>
           <div className="w-[380px] py-4 px-4 flex gap-2 flex-col justify-between  rounded-lg hover:translate-y-[-25px] transition-all max-w-full border border-[#FFD43B] hover:border-[#ffffff] cursor-pointer text-white bg-[#221C27] shadow-lg ">
             <div className="titre my-2 font-bold text-[22px]">
               {Sectitle2}
               <span className="text-[#FFD43B] flex items-center gap-2">
                 {Sectitle3} <MdOutlineStar /> <MdOutlineStar />{" "}
-                <MdOutlineStar />
+                <FaRegStarHalfStroke />
               </span>
             </div>
 
             <div className="icones-language  flex items-center gap-2 flex-wrap">
-              <div
-                title="MongoDB est une base de données NoSQL open-source, conçue pour stocker et gérer de grandes quantités de données non structurées ou semi-structurées."
-                className="text-[30px] text-[#0076BF]"
-              >
-                {/**sql */}
-              </div>
               <div
                 title="Node.js est une plateforme de développement Javascript"
                 className="text-[40px] text-[#69A15C]"
@@ -360,7 +282,7 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               </div>
               <div
                 title="est une bibliothèque JavaScript pour créer des scènes 3D dans un navigateur web. "
-                className="w-[40px] h-[40px] flex justify-center items-center bg-white rounded-lg"
+                className="w-[40px] p-1 h-[40px] flex justify-center items-center bg-white rounded-lg"
               >
                 <img
                   src={express}
@@ -487,36 +409,6 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               </div>
 
               <div
-                title="SQL, pour Structured Query Language, est un langage qui permet d'interroger une base de données relationnelle afin de pouvoir modifier ou récupérer des informations."
-                className="w-[40px] h-[40px] flex justify-center items-center"
-              >
-                <img
-                  src={jest}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-              <div
-                title="est un langage de script préprocesseur qui est compilé ou interprété en CSS (Cascading Style Sheets). "
-                className="w-[40px] h-[40px] flex justify-center items-center"
-              >
-                <img
-                  src={sassO}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-              <div
-                title="Visual Studio Code est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS"
-                className="w-[40px] h-[50px] flex justify-center items-center"
-              >
-                <img
-                  src={vscode}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-              <div
                 title="GitHub est un site web et un service de cloud"
                 className="text-[40px] text-[#1572B6]"
               >
@@ -528,29 +420,10 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               >
                 <i className="fa-brands fa-git-alt"></i>
               </div>
-              <div
-                title="Shopify est une plateforme de commerce en ligne (e-commerce) qui permet à des entreprises et des particuliers de créer et gérer facilement leur propre boutique en ligne."
-                className="w-[40px] h-[50px] flex justify-center items-center hidden"
-              >
-                <img
-                  src={shop}
-                  alt="logo"
-                  className="w-full object-cover"
-                ></img>
-              </div>
-              <div
-                title="Wix Studio est une nouvelle plateforme de création de sites web développée par Wix, qui combine un éditeur visuel avancé et des outils de personnalisation flexibles. "
-                className="h-[23px]  flex justify-center items-center "
-              >
-                <img
-                  src={win}
-                  alt="logo"
-                  className=" h-full w-full object-cover"
-                ></img>
-              </div>
+
               <div
                 title="Stripe est une plateforme de paiement en ligne qui fournit une suite d’outils et d'API puissants pour permettre aux développeurs d’intégrer des solutions de paiement dans leurs applications et sites web."
-                className="w-[40px] h-[50px] flex justify-center items-center bg-white rounded-lg "
+                className="w-[50px] h-[35px] flex justify-center items-center bg-white rounded-lg "
               >
                 <img
                   src={scripe}
@@ -560,13 +433,76 @@ ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architectu
               </div>
 
               <div
-                title="PayPal est une plateforme de paiement en ligne qui offre aux développeurs des outils et des API pour intégrer des options de paiement sécurisées et fiables dans leurs applications web et mobiles"
-                className="w-[40px] h-[50px] flex justify-center p-2 items-center bg-white  rounded-lg"
+                title="Meta fait référence à plusieurs concepts, mais dans le contexte technologique actuel, Meta est surtout connu comme le nouveau nom de la société mère de Facebook."
+                className="w-[40px] bg-white rounded-lg h-[40px] text-[#F7DF1E]"
               >
                 <img
-                  src={paypal}
+                  src={meta}
                   alt="logo"
                   className="w-full object-cover"
+                ></img>
+              </div>
+
+              <div
+                title="
+ChatGPT est un modèle de langage développé par OpenAI, basé sur l'architecture GPT (Generative Pre-trained Transformer)."
+                className="text-[35px] text-[#FFFFFF] "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 48 48"
+                >
+                  <path
+                    fill="#11773E"
+                    d="M30.7,7.27L28.33,9.1c-1.605-2.067-4.068-3.209-6.697-3.092C17.313,6.2,14,9.953,14,14.277l0,9.143	l10.5,6.12l-1,1.72l-11.706-6.827C11.302,24.146,11,23.62,11,23.051l0-8.687C11,8.1,16.129,2.79,22.39,3.007	C25.669,3.12,28.68,4.663,30.7,7.27z"
+                  ></path>
+                  <path
+                    fill="#11773E"
+                    d="M12.861,9.833l0.4,2.967c-2.592,0.357-4.813,1.919-6.026,4.254c-1.994,3.837-0.4,8.582,3.345,10.745	l7.918,4.571l10.55-6.033l0.99,1.726l-11.765,6.724c-0.494,0.282-1.101,0.281-1.594-0.003l-7.523-4.343	C3.73,27.308,1.696,20.211,5.014,14.898C6.752,12.114,9.594,10.279,12.861,9.833z"
+                  ></path>
+                  <path
+                    fill="#11773E"
+                    d="M6.161,26.563l2.77,1.137c-0.987,2.423-0.745,5.128,0.671,7.346	c2.326,3.645,7.233,4.638,10.977,2.476l7.918-4.572l0.05-12.153l1.99,0.006l-0.059,13.551c-0.002,0.569-0.307,1.094-0.8,1.379	l-7.523,4.343c-5.425,3.132-12.588,1.345-15.531-4.185C5.083,32.994,4.914,29.616,6.161,26.563z"
+                  ></path>
+                  <path
+                    fill="#11773E"
+                    d="M17.3,40.73l2.37-1.83c1.605,2.067,4.068,3.209,6.697,3.092C30.687,41.8,34,38.047,34,33.723l0-9.143	l-10.5-6.12l1-1.72l11.706,6.827C36.698,23.854,37,24.38,37,24.949l0,8.687c0,6.264-5.13,11.574-11.39,11.358	C22.331,44.88,19.32,43.337,17.3,40.73z"
+                  ></path>
+                  <path
+                    fill="#11773E"
+                    d="M35.139,38.167l-0.4-2.967c2.592-0.357,4.813-1.919,6.026-4.254c1.994-3.837,0.4-8.582-3.345-10.745	l-7.918-4.571l-10.55,6.033l-0.99-1.726l11.765-6.724c0.494-0.282,1.101-0.281,1.594,0.003l7.523,4.343	c5.425,3.132,7.459,10.229,4.141,15.543C41.248,35.886,38.406,37.721,35.139,38.167z"
+                  ></path>
+                  <path
+                    fill="#11773E"
+                    d="M41.839,21.437l-2.77-1.137c0.987-2.423,0.745-5.128-0.671-7.346	c-2.326-3.645-7.233-4.638-10.977-2.476l-7.918,4.572l-0.05,12.153l-1.99-0.006l0.059-13.551c0.002-0.569,0.307-1.094,0.8-1.379	l7.523-4.343c5.425-3.132,12.588-1.345,15.531,4.185C42.917,15.006,43.086,18.384,41.839,21.437z"
+                  ></path>
+                </svg>
+              </div>
+
+              <div
+                title="Google Analytics est un service gratuit d'analyse d'audience d'un site Web ou d'applications "
+                className="w-[40px] h-[40px] flex justify-center items-center"
+              >
+                <svg
+                  viewBox="0 0 1024 1176.463"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#ed750a"
+                >
+                  <path d={analytics} />
+                </svg>
+              </div>
+              <div
+                title="Wix Studio est une nouvelle plateforme de création de sites web développée par Wix, qui combine un éditeur visuel avancé et des outils de personnalisation flexibles. "
+                className="rounded-lg p-2 bg-white flex justify-center items-center "
+              >
+                <img
+                  src={win}
+                  alt="logo"
+                  className=" h-[20px] w-full object-cover"
                 ></img>
               </div>
             </div>

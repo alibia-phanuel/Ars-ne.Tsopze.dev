@@ -80,7 +80,7 @@ function ProjetFront() {
           icone5={shart}
           icone6={wixS}
           linkCode="https://github.com/alibia-phanuel/IphoneClone3d"
-          linkDemo="https://alibia.net"
+          linkDemo="https://alibia.tech/"
         />
       ),
       startup: (

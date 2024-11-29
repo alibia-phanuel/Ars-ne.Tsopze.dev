@@ -96,8 +96,11 @@ const Testimonial = () => {
                     <p>Anders Palmer</p>
                     <p className="font-semibold text-[#FFD43B] text-center capitalize">
                       cofondateur de{" "}
-                      <a href="" className="underline">
-                        {" "}
+                      <a
+                        href="https://alibia.tech/"
+                        target="_blanck"
+                        className="underline"
+                      >
                         Alibia officiel
                       </a>
                     </p>
@@ -122,109 +125,6 @@ const Testimonial = () => {
                   nécessaires. De plus, dans le monde globalisé d'aujourd'hui,
                   votre application est susceptible d'être utilisée par des
                   personnes de différents pays et langues.
-                </div>
-                <div></div>
-              </div>
-            </CarouselItem>
-            <CarouselItem className="text-white">
-              <div className="w-full  flex  justify-center items-center flex-col gap-6">
-                <div className="flex flex-col justify-center items-center gap-2 ">
-                  <div className="relative">
-                    <img
-                      className="rounded-full w-[120px] h-[120px] bg-[#FFD43B]   p-1"
-                      src={is}
-                      alt=""
-                    />
-                    <img
-                      className="w-[45px] h-[35px] absolute left-[80%] bottom-[42px]  rounded-lg"
-                      src={fr}
-                      alt=""
-                    />
-                  </div>
-                  <div className="gap-2 flex flex-col justify-center items-center ">
-                    <p>ismael issan</p>
-                    <p className="font-semibold text-[#FFD43B] text-center">
-                      Propriétaire de l&apos;application{" "}
-                      <span className="underline">
-                        <a href="">Copilt Drivers</a>
-                      </span>
-                    </p>
-                    <p className="flex justify-center gap-4 items-center text-2xl">
-                      <a href="/" target="_blanck">
-                        <GrLinkedin />
-                      </a>
-                      <a href="/" target="_blanck">
-                        <FaGooglePlay />
-                      </a>
-                      <a href="/" target="_blanck">
-                        <FaAppStoreIos />
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div className="text-center">
-                  La plupart des bases de données, des fonctions de traitement
-                  de texte et des protocoles de communication par transfert de
-                  données utilise par défaut l'alphabet anglais. Le test
-                  d'applications logicielles avec uniquement du texte en
-                  anglais, comme Lorem Ipsum, peut ne pas révéler d'éventuelles
-                  divergences entre les différentes parties de l'application ou
-                  garantir que la police peut afficher tous les caractères
-                  nécessaires. De plus, dans le monde globalisé d'aujourd'hui,
-                  votre application est susceptible d'être utilisée par des
-                  personnes de différents pays et langues.
-                </div>
-                <div></div>
-              </div>
-            </CarouselItem>
-            <CarouselItem className="text-white">
-              <div className="w-full  flex  justify-center items-center flex-col gap-6">
-                <div className=" flex flex-col justify-center items-center gap-2">
-                  <div className="relative">
-                    <img
-                      className="rounded-full w-[120px] h-[120px] bg-[#FFD43B] p-1"
-                      src="https://img.freepik.com/free-vector/bangkok-thailand-may-12-2023-caricature-tiger-woods-smilin_1308-135728.jpg?t=st=1731228524~exp=1731232124~hmac=0491259a60b984a03e4611799c108d3c9a37755ae1d00ac0ab4dae4cfd9d7da7&w=1380"
-                      alt="photo profil"
-                    />
-                    <img
-                      className="w-[45px] h-[35px] absolute left-[80%] bottom-[42px]  rounded-lg"
-                      src={ci}
-                      alt="flag"
-                    />
-                  </div>
-                  <div className="gap-2 flex flex-col justify-center items-center">
-                    <p>Hermanne Koffi</p>
-                    <p className="font-semibold text-[#FFD43B] text-center">
-                      Propriétaire de l&apos;application{" "}
-                      <span className="underline">
-                        <a href="">Sweet</a>
-                      </span>
-                    </p>
-                    <p className="flex justify-center gap-4 items-center text-2xl">
-                      <a href="/" target="_blanck">
-                        <GrLinkedin />
-                      </a>
-                      <a href="/" target="_blanck">
-                        <FaGooglePlay />
-                      </a>
-                      <a href="/" target="_blanck">
-                        <FaAppStoreIos />
-                      </a>
-                    </p>
-                  </div>
-                </div>
-                <div className="text-center">
-                  La plupart des bases de données, des fonctions de traitement
-                  de texte et des protocoles de communication par transfert de
-                  données utilise par défaut l&apos;alphabet anglais. Le test
-                  d&apos;applications logicielles avec uniquement du texte en
-                  anglais, comme Lorem Ipsum, peut ne pas révéler
-                  d&apos;éventuelles divergences entre les différentes parties
-                  de l&apos;application ou garantir que la police peut afficher
-                  tous les caractères nécessaires. De plus, dans le monde
-                  globalisé d&apos;aujourd&apos;hui, votre application est
-                  susceptible d&apos;être utilisée par des personnes de
-                  différents pays et langues.
                 </div>
                 <div></div>
               </div>

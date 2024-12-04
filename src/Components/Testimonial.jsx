@@ -63,16 +63,13 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  La plupart des bases de données, des fonctions de traitement
-                  de texte et des protocoles de communication par transfert de
-                  données utilise par défaut l'alphabet anglais. Le test
-                  d'applications logicielles avec uniquement du texte en
-                  anglais, comme Lorem Ipsum, peut ne pas révéler d'éventuelles
-                  divergences entre les différentes parties de l'application ou
-                  garantir que la police peut afficher tous les caractères
-                  nécessaires. De plus, dans le monde globalisé d'aujourd'hui,
-                  votre application est susceptible d'être utilisée par des
-                  personnes de différents pays et langues.
+                  Phanuel est un développeur web et mobile talentueux, dont les
+                  compétences en React et React Native ont grandement contribué
+                  au succès de nos projets. Toujours professionnel, rigoureux et
+                  collaboratif, il se distingue par son aptitude à livrer des
+                  solutions efficaces et adaptées aux besoins. Je le recommande
+                  vivement à toute entreprise cherchant un développeur compétent
+                  et passionné.
                 </div>
                 <div></div>
               </div>
@@ -115,16 +112,10 @@ const Testimonial = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  La plupart des bases de données, des fonctions de traitement
-                  de texte et des protocoles de communication par transfert de
-                  données utilise par défaut l'alphabet anglais. Le test
-                  d'applications logicielles avec uniquement du texte en
-                  anglais, comme Lorem Ipsum, peut ne pas révéler d'éventuelles
-                  divergences entre les différentes parties de l'application ou
-                  garantir que la police peut afficher tous les caractères
-                  nécessaires. De plus, dans le monde globalisé d'aujourd'hui,
-                  votre application est susceptible d'être utilisée par des
-                  personnes de différents pays et langues.
+                  Phanuel a développé mon site e-commerce avec professionnalisme
+                  et expertise. Sa maîtrise de Next.js et son souci du détail
+                  ont permis de créer une plateforme moderne et performante. Je
+                  le recommande vivement pour ses compétences et son sérieux.
                 </div>
                 <div></div>
               </div>

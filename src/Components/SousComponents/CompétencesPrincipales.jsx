@@ -3,7 +3,9 @@ import tailwind from "../../assets/tailwind.png";
 import Mt from "../../assets/MT (1).png";
 import shadcn from "../../assets/shadcn.png";
 import redux from "../../assets/Redux.png";
-import scripe from "../../assets/stripe.png";
+// import scripe from "../../assets/stripe.png";
+import scripe from "../../assets/nextAuths.png";
+import clerk from "../../assets/clerk.png";
 import library from "../../assets/testing.png";
 import next from "../../assets/nextjs.png";
 import express from "../../assets/express.png";
@@ -420,16 +422,22 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
               >
                 <i className="fa-brands fa-git-alt"></i>
               </div>
-
               <div
-                title="Stripe est une plateforme de paiement en ligne qui fournit une suite d’outils et d'API puissants pour permettre aux développeurs d’intégrer des solutions de paiement dans leurs applications et sites web."
+                title="Clerk est une plateforme dédiée à la gestion de l'authentification et des utilisateurs pour les applications web et mobiles."
                 className="w-[50px] h-[35px] flex justify-center items-center bg-white rounded-lg "
               >
                 <img
-                  src={scripe}
+                  src={clerk}
                   alt="logo"
-                  className="w-full object-cover"
+                  className="w-full object-cover rounded-lg"
                 ></img>
+              </div>
+
+              <div
+                title="NextAuth.js est une bibliothèque d'authentification open source conçue pour les applications construites avec Next.js, un framework React populaire."
+                className=" flex justify-center items-center bg-white p-1 rounded-lg "
+              >
+                <img src={scripe} alt="logo" className=" h-[35px] "></img>
               </div>
 
               <div

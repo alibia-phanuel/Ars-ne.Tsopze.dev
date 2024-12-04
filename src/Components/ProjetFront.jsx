@@ -17,6 +17,7 @@ import Ga from "../assets/ga.png";
 import meta from "../assets/meta.png";
 import gpt from "../assets/gpt (2).png";
 import sanity from "../assets/sanity.png";
+import nextAuth from "../assets/nextAuths.png";
 import three from "../assets/three.png";
 import tailwind from "../assets/tailwind.png";
 import wixS from "../assets/wix.png";
@@ -38,10 +39,14 @@ import axios from "../assets/axios.png";
 import typescript from "../assets/typescript.png";
 import mobilOne from "../assets/mobil/one.png";
 import pke from "../assets/mobil/poemon.jpg";
+import uberCones from "../assets/mobil/final.png";
 import mobilTwo from "../assets/mobil/two.png";
 import threes from "../assets/mobil/three.png";
 import fours from "../assets/mobil/Four.png";
-import expo from "../assets/expo.png";
+import expo from "../assets/expos.png";
+import neonx from "../assets/neonX.png";
+import clerk from "../assets/clerk.png";
+import zustand from "../assets/Zustand.svg";
 import rn from "../assets/R.N.png";
 //images et videos des projets
 import iohone from "../assets/ProjectWeb/images/1.png";
@@ -87,10 +92,11 @@ function ProjetFront() {
         <BookingCard
           imgHeader={startup}
           titleProject="Développement d'une Plateforme de Pitch de Startups avec Next.js 15 et Sanity.io"
-          desc="Dans ma formation Next.js 15, j'ai créé une plateforme permettant aux utilisateurs de pitcher leur startup, avec une fonctionnalité de recherche pour les visiteurs. Le back-end est géré par Sanity.io, assurant une gestion flexible et scalable du contenu. L'application met en œuvre des concepts avancés de Next.js 15 et une solution moderne de gestion de contenu.shadcn/ui pour le style."
+          desc="Dans ma formation sur Next.js 15, j'ai développé une plateforme de pitching pour startups, intégrant une recherche pour les visiteurs et un back-end basé sur Sanity.io pour une gestion de contenu flexible. J'ai utilisé shadcn/ui pour une interface moderne et NextAuth (GitHub) pour une authentification fluide et sécurisée, mettant en œuvre des concepts avancés de Next.js et une solution de gestion de contenu moderne."
           icone1={netxt}
           icone2={shart}
-          icone3={sanity}
+          icone3={nextAuth}
+          icone4={sanity}
           linkCode="https://github.com/alibia-phanuel/nextjs15ProjectWeb/tree/main/start-up-app-with-nextjs15"
           linkDemo="https://nextjs15-project-web.vercel.app/"
         />
@@ -281,7 +287,22 @@ function ProjetFront() {
           icone3={rn}
           icone4={mobile}
           linkCode="https://github.com/alibia-phanuel/PokeMonApp"
-          linkDemo="https://github.com/alibia-phanuel/PokeMonApp"
+          linkDemo=" https://expo.dev/accounts/phanuel/projects/PokeMonApp/updates/55a3db02-b47a-4b1f-968c-cbafe70286cc"
+        />
+      ),
+      mobilSix: (
+        <BookingCard
+          imgHeader={uberCones}
+          titleProject="Création des Interfaces Essentielles de l'Application Uber"
+          desc="Dans le cadre de mon apprentissage de React Native, j'ai développé une application Pokédex connectée à l'API PokéAPI. Elle affiche une liste de Pokémon avec recherche par nom ou numéro. Ce projet a renforcé mes compétences en gestion d'états, consommation d'API REST et optimisation des performances."
+          icone1={typescript}
+          icone2={expo}
+          icone3={rn}
+          icone4={clerk}
+          icone5={neonx}
+          icone6={zustand}
+          linkCode="https://github.com/alibia-phanuel/UberCloneReactNative"
+          linkDemo="https://expo.dev/accounts/phanuel/projects/UberCloneReactNative/updates/44163dec-f869-40fd-8369-2134ef5c9496"
         />
       ),
     },
@@ -338,6 +359,7 @@ function ProjetFront() {
                   agence,
                   coofeHtml,
                   mobilFor,
+                  mobilSix,
                   mobilFive,
                   mobilThree,
                   mobilbeOne,
@@ -361,6 +383,7 @@ function ProjetFront() {
                     {agence}
                     {siteDePlante}
                     {coofeHtml}
+                    {mobilSix}
                     {mobilFive}
                     {mobilFor}
                     {mobilThree}

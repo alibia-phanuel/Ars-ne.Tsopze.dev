@@ -1,25 +1,26 @@
 import tailwind from "../../assets/tailwind.png";
 
-import Mt from "../../assets/MT (1).png";
-import shadcn from "../../assets/shadcn.png";
-import redux from "../../assets/Redux.png";
+// import Mt from "../../assets/MT (1).png";
+// import redux from "../../assets/Redux.png";
 // import scripe from "../../assets/stripe.png";
-import scripe from "../../assets/nextAuths.png";
-import clerk from "../../assets/clerk.png";
+// import NEON from "../../assets/NEON.png";
+// import sentry from "../../assets/Sentry.png";
+
+import shadcn from "../../assets/shadcn.png";
+import scripe from "../../assets/postgresql.png";
+import clerk from "../../assets/prisma-2.png";
 import library from "../../assets/testing.png";
 import next from "../../assets/nextjs.png";
 import express from "../../assets/express.png";
 import sql from "../../assets/sql.png";
 import jest from "../../assets/Jest.png";
 import zustand from "../../assets/Zustand.svg";
-import sentry from "../../assets/Sentry.png";
 import meta from "../../assets/meta.png";
 import three from "../../assets/three.png";
 import typescript from "../../assets/typescript.png";
 import { motion } from "framer-motion";
 import Rn from "../../assets/R.N.png";
 import expo from "../../assets/expo.png";
-import NEON from "../../assets/NEON.png";
 import win from "../../assets/wix.jpg";
 import sass from "../../assets/GSAP.png";
 import { FcApproval } from "react-icons/fc";
@@ -79,12 +80,6 @@ function CompétencesPrincipales() {
             </div>
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
-                title="JavaScript (souvent abrégé en JS) est un langage de programmation pensé pour rendre les pages web interactives."
-                className="text-[35px] text-[#F7DF1E]"
-              >
-                <i className="fa-brands fa-js"></i>
-              </div>
-              <div
                 title="est un langage qui peut être vu comme une version du JavaScript."
                 className="w-[40px] h-[40px] flex justify-center items-center"
               >
@@ -142,17 +137,7 @@ function CompétencesPrincipales() {
                   className="w-full object-cover"
                 ></img>
               </div>
-              <div
-                title="
-Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utilisateur (UI) pour React qui implémente les principes du Material Design développé par Google."
-                className="w-[40px] h-[40px] flex justify-center items-center bg-white p-2 rounded-lg"
-              >
-                <img
-                  src={Mt}
-                  alt="logo"
-                  className="w-full object-cover  "
-                ></img>
-              </div>
+
               <div
                 title="Shadcn est une bibliothèque de composants pour React. "
                 className="w-[40px] h-[40px] flex justify-center items-center bg-white rounded-lg  p-2"
@@ -185,8 +170,19 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                   className="w-full object-cover"
                 ></img>
               </div>
-
               <div
+                title="Neon est une plateforme de bases de données PostgreSQL cloud-native."
+                className="w-[120px]  h-[50px] gap-2 flex  bg-[#191919] justify-center items-center  p-2 rounded-lg"
+              >
+                <img
+                  src={zustand}
+                  alt="logo"
+                  className="w-[30px] h-[35px] object-cover "
+                ></img>
+                <p>zustand</p>
+              </div>
+              {/**
+                <div
                 title="Redux est une bibliothèque de gestion d'état prédictive utilisée principalement avec des applications JavaScript, en particulier celles créées avec React."
                 className="w-[40px] h-[40px] flex justify-center items-center bg-white p-2 rounded-lg"
               >
@@ -196,6 +192,7 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                   className="w-full object-cover "
                 ></img>
               </div>
+  */}
             </div>
             <div className="description">{title1}</div>
           </div>
@@ -215,7 +212,7 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
             <div className="icones-language  flex items-center gap-4 flex-wrap">
               <div
                 title="est un langage qui peut être vu comme une version du JavaScript."
-                className="w-[40px]  h-[50px] flex justify-center items-center"
+                className="w-[50px]  h-[50px] flex justify-center items-center"
               >
                 <img
                   src={typescript}
@@ -226,13 +223,13 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
               {/**new */}
               <div
                 title="React Native est un framework open-source développé par Facebook qui permet de créer des applications mobiles en utilisant JavaScript et React."
-                className=" flex justify-center bg-white items-center w-[40px]  h-[50px]  p-2 rounded-lg"
+                className=" flex justify-center bg-white items-center w-[60px]  h-[50px]  p-2 rounded-lg"
               >
                 <img src={Rn} alt="logo" className="object-cover w-full " />
               </div>
               <div
                 title="Expo est une plateforme et un ensemble d'outils qui facilitent le développement d'applications mobiles avec React Native."
-                className="w-[40px]  h-[50px] bg-[#0F291E] flex justify-center items-center  p-2 rounded-lg"
+                className="w-[60px]  h-[50px] bg-[#0F291E] flex justify-center items-center  p-2 rounded-lg"
               >
                 <img
                   src={expo}
@@ -241,7 +238,8 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                 ></img>
               </div>
 
-              <div
+              {/**
+                <div
                 title="Neon est une plateforme de bases de données PostgreSQL cloud-native."
                 className="w-[40px]  h-[50px]  flex bg-[#191919] justify-center items-center  p-2 rounded-lg"
               >
@@ -250,7 +248,7 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                   alt="logo"
                   className="w-[40px]   object-cover "
                 ></img>
-              </div>
+              </div> */}
               <div
                 title="Neon est une plateforme de bases de données PostgreSQL cloud-native."
                 className="w-[120px]  h-[50px] gap-2 flex  bg-[#191919] justify-center items-center  p-2 rounded-lg"
@@ -423,8 +421,8 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
                 <i className="fa-brands fa-git-alt"></i>
               </div>
               <div
-                title="Clerk est une plateforme dédiée à la gestion de l'authentification et des utilisateurs pour les applications web et mobiles."
-                className="w-[50px] h-[35px] flex justify-center items-center bg-white rounded-lg "
+                title="Prisma est un ORM (Object-Relational Mapping) moderne qui simplifie l'interaction avec des bases de données relationnelles comme PostgreSQL, MySQL, SQLite, et même certaines bases de données NoSQL comme MongoDB."
+                className="w-[50px] h-[35px] p-1 flex justify-center items-center bg-white rounded-lg "
               >
                 <img
                   src={clerk}
@@ -434,7 +432,7 @@ Material UI v5 (ou MUI v5) est une bibliothèque de composants d'interface utili
               </div>
 
               <div
-                title="NextAuth.js est une bibliothèque d'authentification open source conçue pour les applications construites avec Next.js, un framework React populaire."
+                title="PostgreSQL (souvent abrégé en Postgres) est un système de gestion de base de données relationnelle open-source."
                 className=" flex justify-center items-center bg-white p-1 rounded-lg "
               >
                 <img src={scripe} alt="logo" className=" h-[35px] "></img>

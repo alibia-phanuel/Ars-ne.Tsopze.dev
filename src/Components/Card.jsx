@@ -9,7 +9,7 @@ import {
 } from "@material-tailwind/react";
 import { TbEyeShare } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
-
+import { LuMonitorPlay } from "react-icons/lu";
 export function BookingCard({
   imgHeader,
   titleProject,
@@ -22,6 +22,8 @@ export function BookingCard({
   icone4,
   icone5,
   icone6,
+  play = false,
+  linkPlay,
 }) {
   return (
     <Card className="w-full max-w-[26rem] shadow-lg rounded-lg">
@@ -106,27 +108,40 @@ export function BookingCard({
           )}
         </div>
       </CardBody>
-      <CardFooter className="m-4 rounded-lg flex justify-center items-center gap-4">
+      <CardFooter className="m-4 rounded-lg flex justify-between items-center gap-4">
         <a href={linkCode} target="blanck" className="w-full">
           <Button
             size="lg"
             fullWidth={true}
-            className="bg-[#271C1C] py-2 flex justify-center items-center hover:text-[#FFD43B] group-hover:text-yellow-400"
+            className="bg-[#271C1C] py-2 px-1 flex  items-center justify-center hover:text-[#FFD43B] group-hover:text-yellow-400"
           >
             <FaGithub className="text-white text-2xl" />
-            <span className="capitalize"> Voir le code</span>
+            <span className="capitalize"> Code S</span>
           </Button>
         </a>
         <a href={linkDemo} target="blanck" className="w-full">
           <Button
             size="lg"
             fullWidth={true}
-            className="bg-[#271C1C] py-2 flex justify-center items-center hover:text-[#FFD43B] group-hover:text-yellow-400"
+            className="bg-[#271C1C] py-2 px-1 flex items-center justify-center hover:text-[#FFD43B] group-hover:text-yellow-400"
           >
             <TbEyeShare className="text-white text-2xl  " />
-            <span className=" capitalize"> Voir le projet</span>
+            <span className=" capitalize">Démo</span>
           </Button>
         </a>
+
+        {play && (
+          <a href={linkPlay} target="blanck" className="w-full">
+            <Button
+              size="lg"
+              fullWidth={true}
+              className="bg-[#271C1C] py-2 px-1 flex items-center justify-center hover:text-[#FFD43B] group-hover:text-yellow-400"
+            >
+              <LuMonitorPlay className="text-white text-2xl  " />
+              <span className=" capitalize"> communication</span>
+            </Button>
+          </a>
+        )}
       </CardFooter>
     </Card>
   );

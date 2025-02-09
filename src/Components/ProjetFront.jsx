@@ -12,6 +12,11 @@ import {
   TabPanel,
 } from "@material-tailwind/react";
 import { BookingCard } from "./Card";
+import StripeIma from "../assets/ProjectWeb/images/13.png";
+import node from "../assets/nodes.png";
+import ts from "../assets/express.png";
+import express from "../assets/typescript.png";
+import stripe from "../assets/prisma-2.png";
 //icone des  project
 import Ga from "../assets/ga.png";
 import meta from "../assets/meta.png";
@@ -73,6 +78,19 @@ function ProjetFront() {
       label: "Web",
       icon: <FaLaptopCode className="text-[35px]" />,
       value: "Web",
+      stripe: (
+        <BookingCard
+          imgHeader={StripeIma}
+          titleProject="💳 Intégration Stripe Checkout avec Node.js, Express et TypeScript"
+          desc="Ce projet intègre Stripe Checkout avec Node.js, Express et TypeScript pour des paiements en ligne sécurisés. Il permet de configurer les paiements, gérer les sessions et suivre les transactions via webhooks. Idéal pour l'e-commerce, il assure une intégration fluide et un code robuste. 🚀"
+          icone1={node}
+          icone2={express}
+          icone3={ts}
+          icone4={stripe}
+          linkCode="https://github.com/alibia-phanuel/stripe-checkout-nodejs-starter"
+          linkDemo="https://www.facebook.com/100049291370153/videos/1130484912084483/"
+        />
+      ),
       alibia: (
         <BookingCard
           imgHeader={alibiaimg}
@@ -367,12 +385,14 @@ function ProjetFront() {
                   appJon,
                   startup,
                   alibia,
+                  stripe,
                 }) => (
                   <TabPanel
                     key={value}
                     value={value}
                     className="flex  justify-center flex-wrap gap-8 items-center"
                   >
+                    {stripe}
                     {alibia}
                     {startup}
                     {iphoneClone3d}

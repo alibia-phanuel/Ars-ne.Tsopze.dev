@@ -32,9 +32,8 @@ function CompétencesPrincipales() {
   const analytics =
     "m512.216 393.834-2.048.012c-64.62 3.65-115.64 56.942-115.64 122.15 0 1 .01 1.994.035 2.986l-.003-.147v319.292c0 86.656 38.13 139.26 93.993 150.477 7.11 1.508 15.278 2.372 23.648 2.372 65.763 0 119.074-53.31 119.074-119.073v-.356.018-358.237-.218c0-65.797-53.278-119.15-119.047-119.275h-.012zm-314.82 360.288c-65.65 0-118.87 53.22-118.87 118.87s53.22 118.87 118.87 118.87 118.87-53.22 118.87-118.87c-.003-65.65-53.22-118.868-118.87-118.87zm748.08-602.09v720.366c0 65.875-53.402 119.278-119.278 119.278-4.96 0-9.848-.303-14.65-.89l.577.057c-59.42-9.038-104.425-59.77-104.425-121.013 0-1.038.013-2.073.04-3.105l-.004.153v-709.96c-.022-.868-.035-1.89-.035-2.915 0-61.318 45.113-112.1 103.96-120.965l.674-.084c4.16-.515 8.978-.808 13.863-.808 65.877 0 119.28 53.404 119.28 119.28v.635-.032z";
   const { t } = useTranslation();
-  const { Sectitle1, Sectitle2, Sectitle3, more } = t("skills");
-  const { title1, title2, title3, title5, title6, title7, title8 } =
-    t("descriptiont");
+  const { Sectitle1, Sectitle2, Sectitle3 } = t("skills");
+  const { title1, title2, title3 } = t("descriptiont");
 
   return (
     <div>
@@ -421,7 +420,7 @@ function CompétencesPrincipales() {
                 <i className="fa-brands fa-git-alt"></i>
               </div>
               <div
-                title="Prisma est un ORM (Object-Relational Mapping) moderne qui simplifie l'interaction avec des bases de données relationnelles comme PostgreSQL, MySQL, SQLite, et même certaines bases de données NoSQL comme MongoDB."
+                title="Stripe est une plateforme de paiement en ligne qui permet aux entreprises d'accepter des paiements par carte bancaire, virement, Apple Pay, Google Pay, et bien d'autres moyens."
                 className="w-[50px] h-[35px] p-1 flex justify-center items-center bg-white rounded-lg "
               >
                 <img
@@ -432,7 +431,7 @@ function CompétencesPrincipales() {
               </div>
 
               <div
-                title="PostgreSQL (souvent abrégé en Postgres) est un système de gestion de base de données relationnelle open-source."
+                title="MySQL est un système de gestion de base de données relationnelle (SGBDR) open-source. Il permet de stocker, gérer et récupérer des données de manière efficace en utilisant le langage SQL (Structured Query Language)."
                 className=" flex justify-center items-center bg-white p-1 rounded-lg "
               >
                 <img src={scripe} alt="logo" className=" h-[35px] "></img>

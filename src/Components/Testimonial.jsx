@@ -2,13 +2,10 @@
 import { useTranslation } from "react-i18next";
 
 import cmr from "../assets/testimonials/cameroun.png";
-import ci from "../assets/testimonials/ci.png";
 import { FaSquareFacebook } from "react-icons/fa6";
 import anders from "../assets/testimonials/anders.jpg";
-import fr from "../assets/testimonials/france.png";
 import nov from "../assets/testimonials/norvege.png";
-import { FaGooglePlay } from "react-icons/fa";
-import { FaAppStoreIos } from "react-icons/fa";
+
 import {
   Carousel,
   CarouselContent,
